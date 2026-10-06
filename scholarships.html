@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Scholarships - Ethiopian Student Resource Hub</title>
+  <title>Scholarships - NovaSphere</title>
+  <meta name="description" content="Scholarships and funding opportunities for Ethiopian students to study in Ethiopia and abroad.">
+  <meta property="og:title" content="Scholarships - NovaSphere">
+  <meta property="og:description" content="Scholarships and funding opportunities for Ethiopian students to study in Ethiopia and abroad.">
+  <meta property="og:image" content="https://ethiostudenthub-alt.github.io/student-hub/logo-icon.png">
+  <meta property="og:type" content="website">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b0e17">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>Ethiopian Student Resource Hub</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="scholarships.html">Scholarships</a>
-      <a href="study-resources.html">Study Resources</a>
-      <a href="universities.html">Universities</a>
-      <a href="learning-resources.html">Free Learning</a>
-      <a href="contact.html">Get Help</a>
-    </nav>
+    <div class="header-brand">
+      <img src="logo-icon.png" alt="Site logo" class="site-logo">
+      <h1>NovaSphere</h1>
+    </div>
   </header>
 
   <main>
+    <a class="home-link" href="index.html">&larr; Home</a>
+
     <section class="intro">
       <h2>Scholarships</h2>
       <p>Opportunities to help fund your studies, in Ethiopia and abroad.</p>
@@ -27,105 +31,123 @@
 
     <section class="list">
       <div class="item">
-        <h3>DAAD Scholarships (Germany)</h3>
-        <p>Germany's DAAD program funds master's and PhD study for students from many countries, including Ethiopia, and has dedicated programs for African applicants. Germany's public universities also charge no tuition for international students.</p>
-        <a href="https://www.daad.de" target="_blank" rel="noopener">Visit DAAD</a>
+        <span class="badge">Germany</span>
+        <h3>DAAD Scholarships</h3>
+        <p>Germany's DAAD program funds master's and PhD study for students from many countries, including Ethiopia. Germany's public universities also charge no tuition for international students.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="daad-detail.html">View details &rarr;</a>
       </div>
-
       <div class="item">
+        <span class="badge">Africa</span>
         <h3>Mastercard Foundation Scholars Program</h3>
-        <p>Funds university education for African students at partner universities across Africa and abroad, with a focus on academic promise and leadership potential.</p>
-        <a href="https://mastercardfdn.org" target="_blank" rel="noopener">Visit Mastercard Foundation</a>
+        <p>Funds university education for African students at partner universities across Africa and abroad.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://mastercardfdn.org" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>Chevening Scholarships (UK)</h3>
-        <p>The UK government's fully funded master's scholarship for future leaders, open to students from many countries including Ethiopia, covering tuition, living costs, and flights.</p>
-        <a href="https://www.chevening.org" target="_blank" rel="noopener">Visit Chevening</a>
+        <span class="badge">United Kingdom</span>
+        <h3>Chevening Scholarships</h3>
+        <p>The UK government's fully funded master's scholarship for future leaders.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.chevening.org" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>Commonwealth Scholarships (UK)</h3>
-        <p>Funded by the UK government for students from Commonwealth countries, covering master's and PhD study, with an aim toward students who otherwise couldn't afford to study in the UK.</p>
-        <a href="https://cscuk.fcdo.gov.uk" target="_blank" rel="noopener">Visit Commonwealth Scholarships</a>
+        <span class="badge">United Kingdom</span>
+        <h3>Commonwealth Scholarships</h3>
+        <p>Funded by the UK government for students from Commonwealth countries.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://cscuk.fcdo.gov.uk" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>MEXT Scholarship (Japan)</h3>
-        <p>The Japanese government's scholarship for international undergraduate and graduate students, covering tuition, a monthly stipend, and travel costs.</p>
-        <a href="https://www.jasso.go.jp" target="_blank" rel="noopener">Visit JASSO</a>
+        <span class="badge">Japan</span>
+        <h3>MEXT Scholarship</h3>
+        <p>The Japanese government's scholarship for international students, covering tuition, stipend, and travel.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.jasso.go.jp" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
+        <span class="badge">China</span>
         <h3>Chinese Government Scholarship (CSC)</h3>
-        <p>Fully funded scholarships to study in China at the undergraduate, master's, or PhD level, open to students from many countries including Ethiopia.</p>
-        <a href="https://www.campuschina.org" target="_blank" rel="noopener">Visit CampusChina</a>
+        <p>Fully funded scholarships to study in China at undergraduate, master's, or PhD level.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.campuschina.org" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>Fulbright Foreign Student Program (USA)</h3>
-        <p>Funds graduate-level study and research in the United States for international students, including a living stipend and travel costs.</p>
-        <a href="https://foreign.fulbrightonline.org" target="_blank" rel="noopener">Visit Fulbright</a>
+        <span class="badge">United States</span>
+        <h3>Fulbright Foreign Student Program</h3>
+        <p>Funds graduate-level study and research in the United States for international students.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://foreign.fulbrightonline.org" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
+        <span class="badge">Australia</span>
         <h3>Australia Awards</h3>
-        <p>Funded by the Australian government for students from partner countries including Ethiopia, covering full tuition, living costs, and travel for study in Australia.</p>
-        <a href="https://www.dfat.gov.au/people-to-people/australia-awards" target="_blank" rel="noopener">Visit Australia Awards</a>
+        <p>Funded by the Australian government for students from partner countries including Ethiopia.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.dfat.gov.au/people-to-people/australia-awards" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>Türkiye Bursları (Turkey)</h3>
-        <p>The Turkish government's scholarship program for international students, covering tuition, accommodation, a monthly stipend, and Turkish language training.</p>
-        <a href="https://www.turkiyeburslari.gov.tr" target="_blank" rel="noopener">Visit Türkiye Scholarships</a>
+        <span class="badge">Turkey</span>
+        <h3>Türkiye Bursları</h3>
+        <p>The Turkish government's scholarship program, covering tuition, accommodation, and a monthly stipend.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.turkiyeburslari.gov.tr" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
+        <span class="badge">South Korea</span>
         <h3>Global Korea Scholarship</h3>
-        <p>Funded by the South Korean government for undergraduate and graduate international students, covering tuition, airfare, and a monthly allowance.</p>
-        <a href="https://www.studyinkorea.go.kr" target="_blank" rel="noopener">Visit Study in Korea</a>
+        <p>Funded by the South Korean government for undergraduate and graduate international students.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.studyinkorea.go.kr" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
+        <span class="badge">Sweden</span>
         <h3>Swedish Institute Scholarships</h3>
-        <p>Funds master's study in Sweden for students from selected countries, with a focus on future leaders and change-makers.</p>
-        <a href="https://si.se/en/apply/scholarships" target="_blank" rel="noopener">Visit Swedish Institute</a>
+        <p>Funds master's study in Sweden for students from selected countries.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://si.se/en/apply/scholarships" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>Erasmus Mundus Joint Masters (EU)</h3>
-        <p>Fully funded joint master's programs across multiple European universities, open to students worldwide, covering tuition, travel, and a monthly stipend.</p>
-        <a href="https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en" target="_blank" rel="noopener">Visit Erasmus Mundus Catalogue</a>
+        <span class="badge">European Union</span>
+        <h3>Erasmus Mundus Joint Masters</h3>
+        <p>Fully funded joint master's programs across multiple European universities.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>African Leadership University (Rwanda/Mauritius)</h3>
-        <p>Offers substantial need-based financial aid to African students for undergraduate study, alongside a focus on entrepreneurship and leadership.</p>
-        <a href="https://www.alueducation.com" target="_blank" rel="noopener">Visit ALU</a>
+        <span class="badge">Africa</span>
+        <h3>African Leadership University</h3>
+        <p>Offers substantial need-based financial aid to African students for undergraduate study.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.alueducation.com" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>Rhodes Scholarships (University of Oxford)</h3>
-        <p>Extremely competitive but fully funded postgraduate scholarship at Oxford, with dedicated regional selection processes for African applicants.</p>
-        <a href="https://www.rhodeshouse.ox.ac.uk" target="_blank" rel="noopener">Visit Rhodes Trust</a>
+        <span class="badge">United Kingdom</span>
+        <h3>Rhodes Scholarships</h3>
+        <p>Extremely competitive but fully funded postgraduate scholarship at Oxford.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.rhodeshouse.ox.ac.uk" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>Need-Blind US Universities (Harvard, Yale, Princeton, MIT, and others)</h3>
-        <p>A very short list of US universities — including Harvard, Yale, Princeton, MIT, Amherst, Dartmouth, Bowdoin, Notre Dame, Brown, and Washington and Lee — admit international students without considering ability to pay, then cover 100% of demonstrated financial need if admitted. Genuinely life-changing if it works out, but extremely competitive: acceptance rates are typically under 5-7%, even lower for international applicants.</p>
-        <a href="#" target="_blank" rel="noopener">Search each university's financial aid page</a>
+        <span class="badge">Extremely Competitive</span>
+        <h3>Need-Blind US Universities</h3>
+        <p>Harvard, Yale, Princeton, MIT, Amherst, Dartmouth, Bowdoin, Notre Dame, Brown, and Washington and Lee admit internationally without considering ability to pay.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="#" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
-
       <div class="item">
-        <h3>More scholarship databases to search directly</h3>
-        <p>For a constantly updated, searchable list beyond what fits on this page, ScholarshipBob and Scholar Africa track hundreds of active scholarships specifically for African students.</p>
-        <a href="https://www.scholarshipbob.com/scholarships-for/africa" target="_blank" rel="noopener">Visit ScholarshipBob (Africa)</a>
+        <span class="badge">Database</span>
+        <h3>More Scholarship Databases</h3>
+        <p>ScholarshipBob and Scholar Africa track hundreds of active scholarships specifically for African students.</p>
+        <hr class="item-divider">
+        <a class="read-link" href="https://www.scholarshipbob.com/scholarships-for/africa" target="_blank" rel="noopener">Visit &rarr;</a>
       </div>
     </section>
 
     <section class="intro">
       <p>This list will keep growing. Whenever new scholarship opportunities are found, they'll be added here.</p>
     </section>
+
   </main>
 
   <footer>
