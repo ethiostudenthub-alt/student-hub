@@ -12,6 +12,7 @@ body {
 }
 
 /* ---------- Header ---------- */
+
 header {
   padding: 20px 20px 24px;
   background: linear-gradient(135deg, #1e1b6e, #6d28d9);
@@ -47,7 +48,8 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* ---------- Main content ---------- */
+/* ---------- Main ---------- */
+
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -71,24 +73,37 @@ main {
   font-size: 15px;
 }
 
-/* ---------- Homepage cards ---------- */
+/* ---------- Homepage Cards ---------- */
+
 .cards {
   display: grid;
+
+  /* EXACTLY 2 columns */
   grid-template-columns: repeat(2, 105px);
+
   gap: 12px;
   justify-content: center;
+  align-items: start;
 }
 
 .card {
+  width: 105px;
+  min-height: 105px;
+
   background-color: #141829;
   border: 1px solid #242b45;
   border-radius: 16px;
+
   text-decoration: none;
   color: #e4e6ef;
-  transition: transform 0.15s ease, border-color 0.15s ease;
+
   text-align: center;
-  width: 105px;
+
   padding: 16px 8px;
+
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .card:hover {
@@ -102,7 +117,21 @@ main {
   font-weight: 600;
 }
 
-/* ---------- List pages ---------- */
+/* ---------- Icons ---------- */
+
+.card-icon {
+  color: #8b93ff;
+}
+
+.card-icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+/* ---------- List Pages ---------- */
+
 .list {
   display: flex;
   flex-direction: column;
@@ -113,7 +142,9 @@ main {
   background-color: #141829;
   border: 1px solid #242b45;
   border-radius: 16px;
+
   padding: 18px 20px;
+
   transition: border-color 0.15s ease;
 }
 
@@ -145,42 +176,29 @@ main {
   text-decoration: underline;
 }
 
-/* ---------- Footer ---------- */
-footer {
-  text-align: center;
-  padding: 24px;
-  color: #5c6177;
-  font-size: 12px;
-  border-top: 1px solid #1c2133;
-  margin-top: 20px;
-}
+/* ---------- Badges ---------- */
 
-/* ---------- Icons ---------- */
-.card-icon svg {
-  width: 24px;
-  height: 24px;
-  display: block;
-  margin: 0 auto 8px;
-}
-
-.card-icon {
-  color: #8b93ff;
-}
-
-/* ---------- Item badges & read-more link ---------- */
 .badge {
   display: inline-block;
+
   background-color: #1b2340;
   color: #8b93ff;
+
   border: 1px solid #2d3a66;
   border-radius: 20px;
+
   padding: 4px 12px;
+
   font-size: 11px;
   font-weight: 700;
+
   letter-spacing: 0.4px;
   text-transform: uppercase;
+
   margin-bottom: 10px;
 }
+
+/* ---------- Divider ---------- */
 
 .item-divider {
   border: none;
@@ -188,12 +206,16 @@ footer {
   margin: 12px 0;
 }
 
+/* ---------- Read Link ---------- */
+
 .read-link {
   display: inline-flex;
   align-items: center;
   gap: 4px;
+
   font-size: 13.5px;
   color: #6a7bff;
+
   font-weight: 700;
   text-decoration: none;
 }
@@ -202,8 +224,25 @@ footer {
   text-decoration: underline;
 }
 
-/* ---------- Responsive adjustments for larger screens ---------- */
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+
+  padding: 24px;
+
+  color: #5c6177;
+  font-size: 12px;
+
+  border-top: 1px solid #1c2133;
+
+  margin-top: 20px;
+}
+
+/* ---------- Larger Screens ---------- */
+
 @media (min-width: 640px) {
+
   .header-brand {
     padding: 0 10px;
   }
@@ -220,6 +259,7 @@ footer {
     font-size: 16px;
   }
 
+  /* Still exactly 2 columns */
   .cards {
     grid-template-columns: repeat(2, 130px);
     gap: 18px;
@@ -227,6 +267,7 @@ footer {
 
   .card {
     width: 130px;
+    min-height: 130px;
     padding: 20px 10px;
   }
 
@@ -248,12 +289,19 @@ footer {
   }
 }
 
+/* ---------- Desktop ---------- */
+
 @media (min-width: 1000px) {
+
   main {
     padding: 40px 24px;
   }
 
+  /*
+    Keep homepage cards centered.
+    Do NOT change this to flex or 6 columns.
+  */
   .cards {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
