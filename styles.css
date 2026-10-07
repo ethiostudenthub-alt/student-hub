@@ -13,9 +13,9 @@ body {
 
 /* ---------- Header ---------- */
 header {
-  padding: 20px 20px 28px;
-  background: linear-gradient(135deg, #4a1259, #c026a3);
-  border-radius: 0 0 28px 28px;
+  padding: 20px 20px 24px;
+  background: linear-gradient(135deg, #1e1b6e, #6d28d9);
+  border-radius: 0 0 14px 14px;
 }
 
 .header-brand {
