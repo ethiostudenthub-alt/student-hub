@@ -73,8 +73,8 @@ main {
 
 /* ---------- Homepage cards ---------- */
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 105px);
   gap: 12px;
   justify-content: center;
 }
@@ -145,6 +145,7 @@ main {
   text-decoration: underline;
 }
 
+/* ---------- Footer ---------- */
 footer {
   text-align: center;
   padding: 24px;
@@ -154,7 +155,7 @@ footer {
   margin-top: 20px;
 }
 
-/* ---------- Icons (shared SVG styling) ---------- */
+/* ---------- Icons ---------- */
 .card-icon svg {
   width: 24px;
   height: 24px;
@@ -166,7 +167,7 @@ footer {
   color: #8b93ff;
 }
 
-/* ---------- Item badges & read-more link (enatena-style) ---------- */
+/* ---------- Item badges & read-more link ---------- */
 .badge {
   display: inline-block;
   background-color: #1b2340;
@@ -220,6 +221,7 @@ footer {
   }
 
   .cards {
+    grid-template-columns: repeat(2, 130px);
     gap: 18px;
   }
 
