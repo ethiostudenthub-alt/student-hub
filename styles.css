@@ -73,8 +73,8 @@ main {
 
 /* ---------- Homepage cards ---------- */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(2, 105px);
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
 }
@@ -145,7 +145,6 @@ main {
   text-decoration: underline;
 }
 
-/* ---------- Footer ---------- */
 footer {
   text-align: center;
   padding: 24px;
@@ -167,7 +166,7 @@ footer {
   color: #8b93ff;
 }
 
-/* ---------- Item badges & read-more link ---------- */
+/* ---------- Item badges & read-more link (enatena-style) ---------- */
 .badge {
   display: inline-block;
   background-color: #1b2340;
@@ -200,4 +199,59 @@ footer {
 
 .read-link:hover {
   text-decoration: underline;
+}
+
+/* ---------- Responsive adjustments for larger screens ---------- */
+@media (min-width: 640px) {
+  .header-brand {
+    padding: 0 10px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .intro h2 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .cards {
+    gap: 18px;
+  }
+
+  .card {
+    width: 130px;
+    padding: 20px 10px;
+  }
+
+  .card-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .item {
+    padding: 22px 26px;
+  }
+
+  .item h3 {
+    font-size: 18px;
+  }
+
+  .item p {
+    font-size: 14.5px;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    padding: 40px 24px;
+  }
+
+  .cards {
+    justify-content: flex-start;
+  }
 }
