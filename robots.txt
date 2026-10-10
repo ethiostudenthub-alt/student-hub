@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ethiostudenthub-alt.github.io/student-hub/sitemap.xml
